@@ -22,7 +22,8 @@ jobs:
 
       - name: Setup Android SDK
         uses: android-actions/setup-android@v2
-        
+      - run: sdkmanager 'ndk;20.0.5594570'
+     
       - name: Build With Gradle
         run: |
           chmod +x gradlew
